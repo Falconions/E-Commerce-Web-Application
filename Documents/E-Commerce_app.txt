@@ -1,0 +1,251 @@
+E-Commerce app									
+--------------
+
+which contains 
+
+modules:
+
+super admin 
+
+merchants 
+
+customers
+
+products
+
+cart
+
+payments
+
+login page (customer)
+
+register page (customer) can also changer to merchant 
+
+dashboards (customer, merchant, admin)
+
+-------------------------------------------------------------------------------
+			   Tools You'll Need
+-------------------------------------------------------------------------------
+
+Backend
+-------
+
+| Tool                          | Purpose                                |
+| ----------------------------- | -------------------------------------- |
+| Python 3.12+                  | Programming language                   |
+| Django                        | Backend framework                      |
+| Django REST Framework         | Build REST APIs                        |
+| MySQL	                        | Production database                    |
+| SQLite                        | Development database                   |
+| Pillow                        | Image uploads                          |
+| django-filter                 | Search and filtering                   |
+| djangorestframework-simplejwt | JWT Authentication                     |
+| django-cors-headers           | Allow React to communicate with Django |
+
+
+Frontend
+--------
+
+| Tool                      | Purpose                  |
+| ------------------------- | ------------------------ |
+| React                     | User Interface           |
+| Vite                      | Fast React project setup |
+| React Router              | Page routing             |
+| Axios                     | API requests             |
+| Bootstrap or Tailwind CSS | Styling                  |
+| React Hook Form           | Form handling            |
+| Chart.js or Recharts      | Dashboard charts         |
+
+--------------------------------------------------------
+		USER ROLES
+--------------------------------------------------------
+Super Admin
+     │
+     ├── Merchants
+     │      ├── Products
+     │      └── Orders
+     │
+     └── Customers
+            ├── Cart
+            ├── Orders
+            └── Payments
+
+--------------------------------------------------------
+		DATABASE OVERVIEW
+--------------------------------------------------------
+
+User
+│
+├── Customer Profile
+│
+└── Merchant Profile
+        │
+        └── Products
+                │
+                └── Categories
+
+Customer
+│
+├── Cart
+│
+├── Orders
+│
+└── Payments
+
+Orders
+│
+├── Order Items
+│
+└── Payment Details
+
+--------------------------------------------------------
+		Recommended Django Apps
+--------------------------------------------------------
+
+ecommerce/
+│
+├── accounts/
+│
+├── customers/
+│
+├── merchants/
+│
+├── products/
+│
+├── cart/
+│
+├── orders/
+│
+├── payments/
+│
+├── dashboard/
+│
+├── categories/
+│
+└── reviews/
+
+------------------------------------------------------------
+		      API Modules
+------------------------------------------------------------
+
+Authentication
+--------------
+Register
+Login
+Logout
+Refresh Token
+Change Password
+Forgot Password (Optional)
+
+Customers
+----------
+Profile
+Address Management
+Order History
+
+Merchants
+---------
+Merchant Profile
+Product Management
+Order Management
+Sales Dashboard
+
+Products
+--------
+Categories
+Product CRUD
+Search
+Filter
+Reviews
+
+Cart
+----
+Add Item
+Remove Item
+Update Quantity
+View Cart
+
+Orders
+------
+Create Order
+Cancel Order
+Order Details
+Order History
+
+Payments
+--------
+Checkout
+Payment Verification
+Payment History
+
+Admin
+-----
+Manage Users
+Approve Merchants
+Manage Products
+View Orders
+Analytics
+
+------------------------------------------------------------
+		   STEPS FOR THE PROJECT
+------------------------------------------------------------
+
+Phase 1 – Project Setup
+
+Create Django project
+Configure MySQL & SQLite
+Install required packages
+Configure REST Framework
+Configure JWT Authentication
+Configure CORS
+Create React project with Vite
+
+Phase 2 - Authentication
+
+Custom User Model
+Customer Registration
+Customer Login
+Merchant Registration
+Admin Login
+JWT Authentication
+Role-Based Access Control
+
+Phase 3 – Core Modules
+
+Categories
+Products
+Merchant Product Management
+Customer Product Browsing
+Search & Filters
+
+Phase 4 – Shopping Experience
+
+Cart
+Wishlist (Optional)
+Checkout
+Orders
+
+Phase 5 – Payments
+
+Payment Gateway Integration (e.g., Razorpay or Stripe)
+Payment Verification
+Order Confirmation
+
+Phase 6 – Dashboards
+
+Admin Dashboard
+Merchant Dashboard
+Customer Dashboard
+Analytics & Charts
+
+Phase 7 – Final Features
+
+Product Reviews & Ratings
+Email Notifications
+Inventory Alerts
+Invoice Generation
+Deployment
+Testing & Bug Fixes
+
+
+

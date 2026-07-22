@@ -1,0 +1,426 @@
+===============================================================================
+                    E-COMMERCE WEB APPLICATION
+===============================================================================
+
+Project Type
+------------
+Multi-Vendor E-Commerce Web Application
+
+Tech Stack
+----------
+Backend  : Django + Django REST Framework
+Frontend : React (Vite)
+Database : SQLite (Development) + MySQL (Production)
+Authentication : JWT
+
+
+===============================================================================
+                                 MODULES
+===============================================================================
+
+• Super Admin
+
+• Merchants
+
+• Customers
+
+• Products
+
+• Cart
+
+• Orders
+
+• Payments
+
+• Customer Login
+
+• Customer Registration
+    └── Can also register as Merchant
+
+• Dashboards
+    ├── Admin Dashboard
+    ├── Merchant Dashboard
+    └── Customer Dashboard
+
+
+===============================================================================
+                            TOOLS YOU'LL NEED
+===============================================================================
+
+BACKEND
+-------------------------------------------------------------------------------
+
+Python 3.12+
+    → Programming Language
+
+Django
+    → Backend Framework
+
+Django REST Framework (DRF)
+    → Build REST APIs
+
+MySQL
+    → Production Database
+
+SQLite
+    → Development Database
+
+Pillow
+    → Image Uploads
+
+django-filter
+    → Search & Filtering
+
+djangorestframework-simplejwt
+    → JWT Authentication
+
+django-cors-headers
+    → Allow React to communicate with Django
+
+
+FRONTEND
+-------------------------------------------------------------------------------
+
+React
+    → User Interface
+
+Vite
+    → Fast React Project Setup
+
+React Router
+    → Page Routing
+
+Axios
+    → API Requests
+
+Bootstrap / Tailwind CSS
+    → Styling
+
+React Hook Form
+    → Form Handling
+
+Chart.js / Recharts
+    → Dashboard Charts
+
+
+===============================================================================
+                                USER ROLES
+===============================================================================
+
+Super Admin
+│
+├── Manage Merchants
+│      │
+│      ├── Products
+│      └── Orders
+│
+└── Manage Customers
+       │
+       ├── Cart
+       ├── Orders
+       └── Payments
+
+
+===============================================================================
+                           DATABASE OVERVIEW
+===============================================================================
+
+User
+│
+├── Customer Profile
+│
+└── Merchant Profile
+        │
+        └── Products
+                │
+                └── Categories
+
+
+Customer
+│
+├── Cart
+│
+├── Orders
+│
+└── Payments
+
+
+Orders
+│
+├── Order Items
+│
+└── Payment Details
+
+
+===============================================================================
+                       RECOMMENDED DJANGO APPS
+===============================================================================
+
+ecommerce/
+│
+├── accounts/
+│
+├── customers/
+│
+├── merchants/
+│
+├── products/
+│
+├── cart/
+│
+├── orders/
+│
+├── payments/
+│
+├── dashboard/
+│
+├── categories/
+│
+└── reviews/
+
+
+===============================================================================
+                                API MODULES
+===============================================================================
+
+AUTHENTICATION
+-------------------------------------------------------------------------------
+
+• Register
+
+• Login
+
+• Logout
+
+• Refresh Token
+
+• Change Password
+
+• Forgot Password (Optional)
+
+
+CUSTOMERS
+-------------------------------------------------------------------------------
+
+• Customer Profile
+
+• Address Management
+
+• Order History
+
+
+MERCHANTS
+-------------------------------------------------------------------------------
+
+• Merchant Profile
+
+• Product Management
+
+• Order Management
+
+• Sales Dashboard
+
+
+PRODUCTS
+-------------------------------------------------------------------------------
+
+• Categories
+
+• Product CRUD
+
+• Search
+
+• Filter
+
+• Reviews
+
+
+CART
+-------------------------------------------------------------------------------
+
+• Add Item
+
+• Remove Item
+
+• Update Quantity
+
+• View Cart
+
+
+ORDERS
+-------------------------------------------------------------------------------
+
+• Create Order
+
+• Cancel Order
+
+• Order Details
+
+• Order History
+
+
+PAYMENTS
+-------------------------------------------------------------------------------
+
+• Checkout
+
+• Payment Verification
+
+• Payment History
+
+
+ADMIN
+-------------------------------------------------------------------------------
+
+• Manage Users
+
+• Approve Merchants
+
+• Manage Products
+
+• View Orders
+
+• Analytics
+
+
+===============================================================================
+                            PROJECT ROADMAP
+===============================================================================
+
+PHASE 1 - PROJECT SETUP
+-------------------------------------------------------------------------------
+
+□ Create Django Project
+
+□ Configure SQLite (Development)
+
+□ Configure MySQL (Production)
+
+□ Install Required Packages
+
+□ Configure Django REST Framework
+
+□ Configure JWT Authentication
+
+□ Configure CORS
+
+□ Create React Project using Vite
+
+
+PHASE 2 - AUTHENTICATION
+-------------------------------------------------------------------------------
+
+□ Create Custom User Model
+
+□ Customer Registration
+
+□ Customer Login
+
+□ Merchant Registration
+
+□ Admin Login
+
+□ JWT Authentication
+
+□ Role-Based Access Control (RBAC)
+
+
+PHASE 3 - CORE MODULES
+-------------------------------------------------------------------------------
+
+□ Categories
+
+□ Products
+
+□ Merchant Product Management
+
+□ Customer Product Browsing
+
+□ Search
+
+□ Filters
+
+
+PHASE 4 - SHOPPING EXPERIENCE
+-------------------------------------------------------------------------------
+
+□ Shopping Cart
+
+□ Wishlist (Optional)
+
+□ Checkout
+
+□ Orders
+
+
+PHASE 5 - PAYMENTS
+-------------------------------------------------------------------------------
+
+□ Razorpay / Stripe Integration
+
+□ Payment Verification
+
+□ Order Confirmation
+
+
+PHASE 6 - DASHBOARDS
+-------------------------------------------------------------------------------
+
+□ Admin Dashboard
+
+□ Merchant Dashboard
+
+□ Customer Dashboard
+
+□ Analytics & Charts
+
+
+PHASE 7 - FINAL FEATURES
+-------------------------------------------------------------------------------
+
+□ Product Reviews & Ratings
+
+□ Email Notifications
+
+□ Inventory Alerts
+
+□ Invoice Generation
+
+□ Deployment
+
+□ Testing
+
+□ Bug Fixes
+
+
+===============================================================================
+                            FINAL APPLICATION FLOW
+===============================================================================
+
+                              Super Admin
+                                   │
+                 ┌─────────────────┴─────────────────┐
+                 │                                   │
+            Merchants                         Customers
+                 │                                   │
+          ┌──────┴──────┐                     ┌──────┴──────┐
+          │             │                     │             │
+      Products       Orders                Cart         Orders
+          │                                   │             │
+          └─────────────── Checkout ───────────┘             │
+                              │                              │
+                           Payments                          │
+                              │                              │
+                              └──────── Order Confirmation ──┘
+
+
+===============================================================================
+                               PROJECT GOAL
+===============================================================================
+
+Build a complete Multi-Vendor E-Commerce Web Application using Django REST
+Framework as the backend and React as the frontend with JWT authentication,
+role-based access control, product management, shopping cart, payment gateway,
+dashboards, analytics, and deployment-ready architecture.
+
+===============================================================================

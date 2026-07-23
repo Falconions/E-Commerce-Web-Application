@@ -1,7 +1,7 @@
-from django.shortcuts import render
 from rest_framework.views import APIView                        #type:ignore
 from rest_framework.response import Response                    #type:ignore
 from rest_framework import status                               #type:ignore
+from rest_framework.permissions import AllowAny                 #type:ignore
 from .serializers import RegisterSerializer, LoginSerializer    
 from rest_framework_simplejwt.tokens import RefreshToken        #type:ignore
 
